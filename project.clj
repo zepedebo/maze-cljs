@@ -1,4 +1,4 @@
-(defproject tetris "0.1.0-SNAPSHOT"
+(defproject maze "0.1.0-SNAPSHOT"
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -20,11 +20,11 @@
               [{:id "dev"
                 :source-paths ["src"]
 
-                :figwheel {:on-jsload "tetris.core/on-js-reload"}
+                :figwheel {:on-jsload "maze.core/on-js-reload"}
 
-                :compiler {:main tetris.core
+                :compiler {:main maze.core
                            :asset-path "js/compiled/out"
-                           :output-to "resources/public/js/compiled/tetris.js"
+                           :output-to "resources/public/js/compiled/maze.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true}}
                ;; This next build is an compressed minified build for
@@ -32,8 +32,8 @@
                ;; lein cljsbuild once min
                {:id "min"
                 :source-paths ["src"]
-                :compiler {:output-to "resources/public/js/compiled/tetris.js"
-                           :main tetris.core
+                :compiler {:output-to "resources/public/js/compiled/maze.js"
+                           :main maze.core
                            :optimizations :advanced
                            :pretty-print false}}]}
 

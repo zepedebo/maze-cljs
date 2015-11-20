@@ -1,4 +1,4 @@
-(ns tetris.core
+(ns maze.core
   (:require [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
